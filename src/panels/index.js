@@ -29,6 +29,7 @@ export default (editor, config) => {
     id: 'options',
     buttons: [{
       id: swv,
+      active: true,
       command: swv,
       context: swv,
       className: 'fa fa-square-o',
@@ -103,7 +104,10 @@ export default (editor, config) => {
   }]);
 
   const openBl = pn.getButton('views', obl);
-  editor.on('load', () => openBl && openBl.set('active', 1));
+  editor.on('load', () => {
+    openBl && openBl.set('active', 1)
+    editor.Commands.run('sw-visibility')
+  });
 
   // On component change show the Style Manager
   config.showStylesOnChange && editor.on('component:selected', () => {
