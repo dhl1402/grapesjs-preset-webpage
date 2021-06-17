@@ -74,7 +74,7 @@ export default (editor, config) => {
     },{
       id: otm,
       command: otm,
-      className: 'fa fa-cog',
+      className: 'fa fa-info',
     },{
       id: ola,
       command: ola,
