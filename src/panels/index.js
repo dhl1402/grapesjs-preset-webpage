@@ -80,9 +80,9 @@ export default (editor, config) => {
       id: "views",
       buttons: [
         {
-          id: ola,
-          command: ola,
-          className: "fa fa-bars",
+          id: obl,
+          command: obl,
+          className: "fa fa-th-large",
         },
         {
           id: osm,
@@ -96,9 +96,9 @@ export default (editor, config) => {
           className: "fa fa-info",
         },
         {
-          id: obl,
-          command: obl,
-          className: "fa fa-th-large",
+          id: ola,
+          command: ola,
+          className: "fa fa-bars",
         },
       ],
     },
