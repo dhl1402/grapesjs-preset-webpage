@@ -108,6 +108,11 @@ export default (editor, config) => {
   const panelDevices = pn.addPanel({ id: "devices-c" });
   panelDevices.get("buttons").add([
     {
+        id: 'exit',
+        command: 'exit',
+        className: "fa fa-chevron-left",
+    },
+    {
       id: cmdDeviceDesktop,
       command: cmdDeviceDesktop,
       className: "fa fa-desktop",
